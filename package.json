@@ -1,12 +1,12 @@
 {
-  "name": "dialogo-idea",
+  "name": "nextjs-tailwindcss-typescript-storybook",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
