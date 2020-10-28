@@ -1,23 +1,25 @@
 import Link from "next/link"
-import Image from "next/image"
-
 import cn from "classnames"
 
-type Props = {
-  itHovers: boolean
+export interface LogoProps {
+  itHovers?: boolean
 }
 
-const Logo = ({ itHovers }: Props) => {
+export const Logo: React.FC<LogoProps> = ({ itHovers = false }) => {
   return (
     <Link href='/'>
       <a>
-          <Image className={cn({
-              "w-auto h-full transition-transform duration-300 ease-in-out transform": true,
-              "hover:scale-105": itHovers,
-            })} src="/vercel.svg" alt='Vercel Logo' width="283" height="64" priority/>
-
+        <img
+          className={cn({
+            "w-auto h-full transition-transform duration-300 ease-in-out transform": true,
+            "hover:scale-105": itHovers,
+          })}
+          src='/vercel.svg'
+          alt='Vercel Logo'
+          width='283'
+          height='64'
+        />
       </a>
     </Link>
   )
 }
-export default Logo
