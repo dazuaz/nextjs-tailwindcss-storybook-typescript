@@ -20,5 +20,5 @@ export const Variant = Template.bind({})
 
 Variant.args = {
   href: "#",
-  isVarian: true,
+  isVariant: true,
 }

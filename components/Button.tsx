@@ -7,14 +7,9 @@ export interface ButtonProps extends HTMLAttributes<HTMLDivElement> {
   isVariant?: boolean
 }
 
-export const Button: React.FC<ButtonProps> = ({
-  href,
-  children,
-  isVariant,
-  ...rest
-}) => {
+export const Button: React.FC<ButtonProps> = ({ href, children, isVariant, ...rest }) => {
   return (
-    <div className='inline-flex rounded-md shadow' {...rest}>
+    <div className={`inline-flex ${!isVariant ? "rounded-md shadow" : ""}`} {...rest}>
       <Link href={href}>
         {/* prettier-ignore */}
         <a
