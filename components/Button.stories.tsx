@@ -6,19 +6,12 @@ export default {
   component: Button,
 } as Meta
 
-const Template: Story<ButtonProps> = (args) => (
-  <Button {...args}>Default Button</Button>
-)
+const Template: Story<ButtonProps> = (args) => <Button {...args}>Default Button</Button>
 
 export const Primary = Template.bind({})
-
-Primary.args = {
-  href: "/",
-}
 
 export const Variant = Template.bind({})
 
 Variant.args = {
-  href: "#",
   isVariant: true,
 }

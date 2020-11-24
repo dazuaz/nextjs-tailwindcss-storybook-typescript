@@ -16,8 +16,8 @@ export default function Home() {
           Start building something amazing.
         </h2>
         <div className='mt-8 flex justify-center'>
-          <Button href='/'>Get started</Button>
-          <Button href='#' isVariant className='ml-3'>
+          <Button>Get started</Button>
+          <Button isVariant className='ml-3'>
             Learn more
           </Button>
         </div>
