@@ -1,6 +1,6 @@
 import { Logo, LogoProps } from "./Logo"
 import { Story, Meta } from "@storybook/react/types-6-0"
-// TODO: storybook does not support next/image yet
+// TODO: @nextjs/plugin-storybook does not support next/image yet
 export default {
   title: "Brand/Logo",
   component: Logo,

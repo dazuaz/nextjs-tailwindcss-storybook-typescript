@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@next/plugin-storybook": "^10.0.3",
     "@storybook/addon-actions": "^6.1.9",
     "@storybook/addon-essentials": "^6.1.9",
     "@storybook/addon-links": "^6.1.9",
