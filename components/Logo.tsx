@@ -1,13 +1,13 @@
-import Link from "next/link"
+import Link, { LinkProps } from "next/link"
 import cn from "classnames"
 import Image from "next/image"
-export interface LogoProps {
+export interface LogoProps extends LinkProps {
   itHovers?: boolean
 }
 
-export const Logo: React.FC<LogoProps> = ({ itHovers = false }) => {
+export const Logo: React.FC<LogoProps> = ({ itHovers = false, ...rest }) => {
   return (
-    <Link href='/'>
+    <Link {...rest}>
       <a
         className={cn({
           "w-auto h-full transition-transform duration-300 ease-in-out transform": true,

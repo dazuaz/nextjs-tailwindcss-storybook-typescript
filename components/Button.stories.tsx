@@ -1,4 +1,4 @@
-import { Button, ButtonProps } from "components/Button"
+import { Button, ButtonProps } from "./Button"
 import { Story, Meta } from "@storybook/react/types-6-0"
 
 export default {
@@ -8,9 +8,9 @@ export default {
 
 const Template: Story<ButtonProps> = (args) => <Button {...args}>Default Button</Button>
 
-export const Primary = Template.bind({})
+export const Primary: Story<ButtonProps> = Template.bind({})
 
-export const Variant = Template.bind({})
+export const Variant: Story<ButtonProps> = Template.bind({})
 
 Variant.args = {
   isVariant: true,
