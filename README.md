@@ -6,7 +6,7 @@ This package aims to be a flexible starting point if you want to use Nextjs, Tai
 
 It is built by nextjs pipeline and included independently in Storybook.
 
-Please review `package.json` and make changes according your needs
+Please review `package.json` and make changes according to your needs
 
 ```
 "tailwind-storybook": "tailwind build ./styles/tailwind.css -o ./public/storybook/tailwind.storybook.css",
