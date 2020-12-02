@@ -1,4 +1,6 @@
-import Link, { LinkProps } from "next/link"
+import Link from "next/link"
+import type { LinkProps } from "next/link"
+
 import cn from "classnames"
 import Image from "next/image"
 

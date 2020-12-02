@@ -8,10 +8,11 @@ It is built by nextjs pipeline and included independently in Storybook.
 
 Please review `package.json` and make changes according to your needs
 
-```
+```json
 "tailwind-storybook": "tailwind build ./styles/tailwind.css -o ./public/storybook/tailwind.storybook.css",
+"tailwind-storybook-build": "NODE_ENV=production tailwind build ./styles/tailwind.css -o ./storybook-static/storybook/tailwind.storybook.css",
 "storybook": "npm run tailwind-storybook && start-storybook -s ./public -p 6006",
-"build-storybook": "build-storybook"
+"build-storybook": "build-storybook && tailwind-storybook-build"
 ```
 
 ## NextJS default Readme...

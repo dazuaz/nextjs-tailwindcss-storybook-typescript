@@ -1,10 +1,13 @@
 import { Logo } from "components/Logo"
 import { Button } from "components/Button"
+import { Github } from "components/Github"
+
 export default function Home() {
   // Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
   // Read the documentation to get started: https://tailwindui.com/documentation
   return (
     <div className='bg-white'>
+      <Github target='_blank' />
       <div className='max-w-screen-xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8'>
         <div className='flex justify-center'>
           <Logo itHovers href='/' />
