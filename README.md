@@ -1,10 +1,11 @@
 ## nextjs-tailwindcss-storybook-typescript
 
-This package aims to be a flexible starting point if you want to use Nextjs, TailwindCSS, Storybook and typescript.
+This package aims to be a flexible starting point if you want to use Nextjs, TailwindCSS, Storybook and TypeScript.
 
 ### TailwindCSS
 
-It is built by nextjs pipeline and included independently in Storybook.
+Instead of using Storybook's own webpack, this repo uses nextjs build pipeline and then includes the generated CSS independently in Storybook.
+The only caveat is that you have to place the generated CSS somewhere that can be accessed by storybook webserver.
 
 Please review `package.json` and make changes according to your needs
 
