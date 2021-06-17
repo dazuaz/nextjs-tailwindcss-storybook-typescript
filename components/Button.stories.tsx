@@ -1,10 +1,10 @@
-import { Button } from "./Button"
+import { Button } from './Button'
 
-import type { ButtonProps } from "./Button"
-import type { Story, Meta } from "@storybook/react/types-6-0"
+import type { ButtonProps } from './Button'
+import type { Story, Meta } from '@storybook/react/types-6-0'
 
 export default {
-  title: "Brand/Button",
+  title: 'Brand/Button',
   component: Button,
 } as Meta
 
