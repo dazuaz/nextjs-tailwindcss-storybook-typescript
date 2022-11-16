@@ -12,16 +12,16 @@
     "build-storybook": "build-storybook && npm run tailwind-storybook-build"
   },
   "dependencies": {
-    "next": "^12.0.4",
+    "next": "^12.3.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@next/plugin-storybook": "^12.0.4",
     "@storybook/addon-actions": "^6.2.9",
-    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-links": "^6.2.9",
-    "@storybook/react": "^6.2.9",
+    "@storybook/react": "^6.5.13",
     "@types/react": "^17.0.11",
     "autoprefixer": "^10.2.6",
     "classnames": "^2.3.1",
